@@ -13,7 +13,8 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>@yield('title') - Quiz Application</title>
+    <title>@yield('title') - Ecommerce Admin Panel</title>
+    <script src="{{asset('assets/vendor/libs/jquery/jquery.js')}}"></script>
 
     <meta name="description" content="" />
 

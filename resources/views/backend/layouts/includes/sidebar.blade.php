@@ -27,60 +27,19 @@
     <div class="menu-inner-shadow"></div>
 
     <ul class="menu-inner py-1">
-        <!-- Page -->
-        <li class="menu-item">
+        <li class="menu-item @if(Route::currentRouteName() == 'admin.dashboard') active @endif">
             <a href="{{ route('admin.dashboard') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-layout-grid"></i>
-                <div data-i18n="Page 1">Dashboard</div>
+                <div data-i18n="Dashboard">Dashboard</div>
             </a>
         </li>
-        <li class="menu-item ">
-            <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons ti ti-notebook"></i>
-                <div data-i18n="Manage Quiz">Manage Quiz</div>
-            </a>
-            <ul class="menu-sub">
-                <li class="menu-item">
-                    <a href="{{ route('quiz-categories.index') }}" class="menu-link">
-                        <div data-i18n="Quiz Categories">Quiz Categories</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="{{ route('quizzes.index') }}" class="menu-link">
-                        <div data-i18n="Quiz">Quiz</div>
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('blogs.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-article"></i>
-                <div data-i18n="Page 1">Manage Blog</div>
+
+        <li class="menu-item @if(Route::currentRouteName() == 'brands.index') active @endif">
+            <a href="{{ route('brands.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-list"></i>
+                <div data-i18n="Brands">Brands</div>
             </a>
         </li>
-        <li class="menu-item">
-            <a href="{{ route('faqs.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-help"></i>
-                <div data-i18n="Page 1">Manage FAQ</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('plans.index') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-license"></i>
-                <div data-i18n="Page 1">Manage Plans</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('admin.testimonials') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-certificate-2"></i>
-                <div data-i18n="Page 1">Testimonial</div>
-            </a>
-        </li>
-        <li class="menu-item">
-            <a href="{{ route('admin.manage-users') }}" class="menu-link">
-                <i class="menu-icon tf-icons ti ti-users-group"></i>
-                <div data-i18n="Page 1">Manage Users</div>
-            </a>
-        </li>
+
     </ul>
 </aside>

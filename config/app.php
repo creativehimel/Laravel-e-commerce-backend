@@ -2,6 +2,8 @@
 
 return [
 
+    'home' => env('APP_HOME', '/admin/dashboard'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
