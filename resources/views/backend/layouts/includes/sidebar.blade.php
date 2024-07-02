@@ -40,6 +40,12 @@
                 <div data-i18n="Brands">Brands</div>
             </a>
         </li>
+        <li class="menu-item @if(Route::currentRouteName() == 'units.index') active @endif">
+            <a href="{{ route('units.index') }}" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-ruler-measure"></i>
+                <div data-i18n="Units">Units</div>
+            </a>
+        </li>
 
     </ul>
 </aside>
